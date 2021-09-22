@@ -61,7 +61,7 @@ def create_jtbd_earn_cache():
 
     featured_grant = None
 
-    if not settings.DEBUG:
+    if 'prod' in settings.ENV:
         # WalletConnect
         grant_id = 275
     else:
